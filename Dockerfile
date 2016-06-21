@@ -11,6 +11,7 @@ ADD modules.conf /etc/proftpd/modules.conf
 RUN sudo chown root:root /etc/proftpd/modules.conf
 RUN sudo chown root:root /etc/proftpd/proftpd.conf
 RUN sudo chown root:root /etc/proftpd/ldap.conf
+RUN sudo chmod +x /launch
 
 EXPOSE 21
 EXPOSE 20
