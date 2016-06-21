@@ -1,7 +1,7 @@
-FROM ubuntu
+FROM ubuntu:14.04
 
 RUN apt-get update -y
-RUN apt-get install -y proftpd
+RUN apt-get install -y proftpd proftpd-mod-ldap proftpd-mod-vroot
 
 ADD launch /launch
 ADD proftpd.conf /etc/proftpd/proftpd.conf
